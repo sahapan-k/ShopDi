@@ -1,0 +1,10 @@
+.item-detail-frame {
+  margin: 10rem 0;
+  padding: 10rem;
+}
+
+.loading-textbox {
+  font-size: 4.8rem;
+  text-align: center;
+  justify-content: center;
+}

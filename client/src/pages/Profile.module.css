@@ -1,0 +1,56 @@
+.profile-page {
+  display: grid;
+  grid-template-columns: 1fr 4fr;
+  padding: 10rem;
+}
+
+.side-bar {
+  border-right: 1px solid #e9ecef;
+  margin: 7.5rem 0;
+}
+
+.side-header {
+  font-size: 2.8rem;
+  color: #000000;
+  font-weight: 600;
+  margin-bottom: 7.5rem;
+}
+
+.nav-items {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+}
+
+.icon {
+  width: 41px;
+  height: 41px;
+  color: #747474;
+}
+
+.side-nav-list {
+  display: flex;
+  flex-direction: column;
+  list-style: none;
+  gap: 5rem;
+}
+
+a:-webkit-any-link {
+  text-decoration: none;
+  cursor: pointer;
+}
+
+li a.active {
+  color: #171717;
+  font-weight: 700;
+  font-size: 1.8rem;
+  border-bottom: #2e2e2e solid 3px;
+}
+
+.nav-items-text {
+  font-size: 1.8rem;
+  color: #747474;
+  font-weight: 500;
+  text-align: center;
+  text-decoration: none;
+}

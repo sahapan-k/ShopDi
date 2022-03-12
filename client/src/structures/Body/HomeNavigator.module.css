@@ -1,0 +1,30 @@
+.homenavigator {
+  margin-bottom: 5rem;
+}
+
+.homenavigator ul {
+  display: flex;
+  border-bottom: 1px solid #e9ecef;
+}
+
+.tablists li {
+  font-size: 1.6rem;
+  font-weight: 900;
+  padding: 16px 8px;
+  text-align: center;
+  text-transform: uppercase;
+  list-style: none;
+  margin: 0 auto;
+  color: #747474;
+}
+
+.tablists li:hover {
+  cursor: pointer;
+  color: #464646;
+}
+
+.selected {
+  transform: scale(115%);
+  transition: all 0.15s ease;
+  color: #171717 !important;
+}

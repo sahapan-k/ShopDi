@@ -1,0 +1,22 @@
+/*///////////////////////////////////////////////////////////////////
+
+
+error message color: #ff333
+successful message color: #33ff33 
+
+
+///////////////////////////////////////////////////////////////////*/
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800;900&display=swap');
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 62.5%;
+}
+
+[class^='swal2'] {
+  font-size: 10px !important;
+}

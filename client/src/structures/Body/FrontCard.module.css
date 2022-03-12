@@ -1,0 +1,30 @@
+.frontcard {
+  text-align: center;
+  padding: 12.5rem 10rem;
+}
+
+.header p {
+  font-size: 6rem;
+  font-weight: 900;
+  text-transform: uppercase;
+  line-height: 40px;
+}
+
+.header p:first-child {
+  padding-bottom: 15px;
+}
+
+.lastrow {
+  display: inline-block;
+  font-size: 5.5rem;
+  border-bottom: 10px solid #e67e22;
+  padding: 0 0 20px 0;
+}
+
+.slogan {
+  font-size: 2.4rem;
+  font-weight: 600;
+  color: #3b3b3b;
+  margin-top: 30px;
+  margin-bottom: 30px;
+}

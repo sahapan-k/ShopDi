@@ -1,0 +1,153 @@
+.checkout-item-box {
+  margin: 1rem 3rem;
+  display: flex;
+  flex-direction: column;
+  box-shadow: 0 0.5rem 0.5rem 0 rgb(0 0 0 / 15%);
+  padding: 3rem;
+}
+
+.seller-box {
+  display: flex;
+  gap: 3rem;
+  border-bottom: 1px solid #e9ecef;
+  padding: 1rem;
+}
+
+.seller-text {
+  font-size: 1.6rem;
+  color: #909090;
+}
+
+.seller-photo {
+  width: 3.1rem;
+  height: 3.1rem;
+  border-radius: 50%;
+}
+
+.seller-name {
+  font-size: 1.6rem;
+}
+
+.item-box {
+  display: grid;
+  padding: 1rem;
+  grid-template-columns: 1fr 3.5fr 1.5fr 1fr;
+  gap: 3rem;
+  border-bottom: 1px solid #e9ecef;
+}
+
+.item-image-box {
+  margin: 2rem 0;
+}
+
+.item-image {
+  border-radius: 5px;
+  width: 12rem;
+  height: 12rem;
+}
+
+.item-description-box {
+  display: flex;
+  flex-direction: column;
+  margin: 2rem 0;
+  gap: 2rem;
+}
+
+.item-name {
+  font-size: 1.8rem;
+  font-weight: 500;
+}
+
+.item-quantity {
+  font-size: 1.6rem;
+  color: #1a1a1a;
+}
+
+.quantity-adjust {
+  display: flex;
+  align-items: center;
+}
+
+.quantity-adjust-input {
+  height: 30px;
+  width: 50px;
+  text-align: center;
+  border: 1px solid #e3e3e3;
+}
+
+.quantity-adjust-input:focus {
+  outline: none;
+}
+
+.quantity-adjust-button {
+  font-size: 1.6rem;
+  padding: 0;
+  color: #b6b6b6;
+  background-color: white;
+  display: inline-block;
+  height: 30px;
+  width: 30px;
+  border-radius: revert;
+  border: 1px solid #e3e3e3;
+}
+
+.quantity-adjust-button:hover {
+  background-color: #e6e6e6;
+}
+
+.item-price-box {
+  display: flex;
+  gap: 2rem;
+  align-items: center;
+}
+
+.item-price {
+  text-align: center;
+  vertical-align: middle;
+  font-size: 2.4rem;
+  color: #e67e22;
+  font-weight: 500;
+}
+
+.remove {
+  font-size: 1.6rem;
+  padding: 0;
+  height: 30px;
+  width: 30px;
+  align-items: center;
+  float: right;
+  vertical-align: middle;
+  text-align: center;
+  color: #b6b6b6;
+  background-color: white;
+  border: 1px solid #e3e3e3;
+}
+
+.remove:hover {
+  background-color: #e6e6e6;
+}
+
+.item-status {
+  display: flex;
+  flex-direction: column;
+  margin: 2rem 0;
+  gap: 2rem;
+}
+
+.status-text {
+  font-size: 1.6rem;
+}
+
+.order-sum {
+  display: block;
+  font-size: 2rem;
+  font-weight: 500;
+  text-align: right;
+}
+
+.order-total-number {
+  font-size: 2.2rem;
+  font-weight: 500;
+  color: #e67e22;
+  margin: 0 2rem;
+}

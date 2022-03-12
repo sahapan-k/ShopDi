@@ -1,0 +1,21 @@
+.button {
+  background-color: #583c23;
+  padding: 1rem;
+  border: none;
+  border-radius: 6px;
+}
+
+.text {
+  color: #fdf2e9;
+  font-weight: 700;
+  font-style: bold;
+  font-size: 1.6rem;
+}
+
+.button:hover,
+.button:visited,
+.button:link {
+  cursor: pointer;
+  transition: all 0.3s;
+  background-color: #3e2209;
+}

@@ -1,0 +1,141 @@
+.checkout-main-box {
+  display: flex;
+  flex-direction: column;
+  margin: 7.5rem 0;
+}
+
+.selection-box {
+  margin: 1rem 3rem;
+  display: flex;
+  flex-direction: column;
+  box-shadow: 0 0.5rem 0.5rem 0 rgb(0 0 0 / 15%);
+  padding: 3rem;
+}
+
+.box-instruction {
+  font-size: 2.4rem;
+  font-weight: 500;
+}
+
+.input-field {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+  padding: 1rem;
+  margin: 2rem 0;
+}
+
+.radio-button {
+  height: 2rem;
+  width: 2rem;
+  border: none;
+}
+
+.radio-label {
+  font-size: 1.6rem;
+}
+
+.custom-address-textarea {
+  border: none;
+  border-radius: 3px;
+  width: 30rem;
+  height: 10rem;
+  box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.35);
+  font-size: 1.6rem;
+  background-color: #f7f7f7;
+  padding-left: 1rem;
+  text-align: start;
+  cursor: text;
+  overflow: auto;
+  overflow-wrap: break-word;
+}
+
+.no-items-warning-text {
+  font-size: 3.6rem;
+  text-align: center;
+  color: #909090;
+  margin: 7.5rem 3rem;
+  padding: 3rem;
+}
+
+.checkout-total-box {
+  margin: 5rem 3rem 1rem 3rem;
+  display: flex;
+  flex-direction: column;
+  box-shadow: 0 0.5rem 0.5rem 0 rgb(0 0 0 / 15%);
+}
+
+.coupon-box {
+  margin: 1rem 1rem;
+  padding: 3rem;
+  display: flex;
+  gap: 2rem;
+  align-self: end;
+  border-bottom: 1px solid #e9ecef;
+}
+
+.coupon-label {
+  font-size: 1.6rem;
+  color: #909090;
+  align-self: center;
+}
+
+.coupon-input {
+  border: none;
+  border-radius: 3px;
+  width: 30rem;
+  height: 4.5rem;
+  box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.35);
+  font-size: 1.6rem;
+  background-color: #f7f7f7;
+  padding-left: 1rem;
+  cursor: text;
+}
+
+.total-box {
+  margin: 1rem 3rem;
+}
+
+.total-description {
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+
+.total-text {
+  font-size: 2.4rem;
+}
+
+.price-number {
+  margin-left: 5rem;
+  font-size: 3.8rem;
+  color: #cf711f;
+  font-weight: 600;
+}
+
+.total-quantity {
+  margin-top: 1rem;
+  font-size: 2.4rem;
+}
+
+.checkout-button {
+  display: block;
+  width: 30rem;
+  align-self: flex-end;
+  margin-top: 3rem;
+  border-radius: 5px;
+  padding: 2rem;
+  border: none;
+  color: white;
+  font-weight: 500;
+  font-size: 2.6rem;
+  background-color: #e67e22;
+  margin-right: 3rem;
+}
+
+.checkout-button:hover {
+  cursor: pointer;
+  transition: all 0.3s;
+  background-color: #cf711f;
+}

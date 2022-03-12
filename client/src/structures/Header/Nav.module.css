@@ -1,0 +1,13 @@
+.nav {
+  background-color: #ffe8cc;
+  padding: 1rem 4rem 0 4rem;
+  border: none;
+}
+
+.nav ul {
+  display: flex;
+  justify-content: space-evenly;
+  list-style-type: none;
+  column-gap: 5rem;
+  font-size: 2.8rem;
+}

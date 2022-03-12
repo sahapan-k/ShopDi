@@ -1,0 +1,32 @@
+.user-button-link {
+  text-decoration: none;
+}
+
+.user-card {
+  display: flex;
+  gap: 1rem;
+  background-color: #e67e22;
+  border: none;
+  border-radius: 5px;
+  padding: 0.5rem 1rem;
+  align-items: center;
+}
+
+.user-card:hover {
+  cursor: pointer;
+  background-color: #cf711f;
+  transition: all 0.3s;
+}
+
+.profile-photo {
+  width: 42px;
+  height: 42px;
+  border-radius: 50%;
+  overflow: hidden;
+}
+
+.user-name {
+  color: #ffffff;
+  font-size: 2rem;
+  font-weight: 500;
+}

@@ -1,0 +1,69 @@
+.main-box {
+  margin: 7.5rem 0;
+}
+
+.change-password-box {
+  border-bottom: 1px solid #e9ecef;
+}
+
+.settings-header {
+  color: #171717;
+  padding: 0;
+}
+
+.change-password-form {
+  display: flex;
+  flex-direction: column;
+  gap: 4rem;
+  align-items: center;
+  margin: 5rem 0;
+}
+
+.input {
+  border: none;
+  border-radius: 3px;
+  width: 30rem;
+  height: 4.5rem;
+  box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.35);
+  font-size: 1.6rem;
+  background-color: #f7f7f7;
+  padding-left: 1rem;
+}
+
+.deactive-box {
+  margin: 7.5rem 0;
+}
+
+.warning-text {
+  color: red;
+  font-weight: 600;
+  font-size: 1.6rem;
+  padding: 1rem 3rem;
+  text-align: center;
+  line-height: 1.6;
+  margin: 2rem 0;
+}
+
+.deactivate-account-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 3rem;
+}
+
+.delete-account-button {
+  background-color: #e60000;
+  padding: 1rem;
+  border: none;
+  border-radius: 6px;
+  color: white;
+  font-weight: 700;
+  font-style: bold;
+  font-size: 1.6rem;
+}
+
+.delete-account-button:hover {
+  cursor: pointer;
+  transition: all 0.3s;
+  background-color: #cc0000;
+}

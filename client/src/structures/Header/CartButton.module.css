@@ -1,0 +1,13 @@
+.cartIcon {
+  color: #e67e22;
+  font-size: 2rem;
+  height: 50px;
+  width: 50px;
+  align-tracks: center;
+}
+
+.cartIcon:hover {
+  cursor: pointer;
+  transform: scale(107.5%);
+  transition: all 0.3s;
+}

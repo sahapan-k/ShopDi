@@ -1,0 +1,64 @@
+.footer-box {
+  display: flex;
+  flex-direction: column;
+}
+
+.mainarea {
+  display: flex;
+  justify-content: space-evenly;
+  padding: 6rem 8rem;
+  font-size: 2.4rem;
+}
+
+.firstchild {
+  display: flex;
+  flex-direction: column;
+  gap: 3.35rem;
+}
+
+.header {
+  color: #555;
+  font-size: 1.8rem;
+  font-weight: 600;
+  margin-bottom: 4rem;
+}
+
+.text,
+.text li,
+.text li a,
+.text p {
+  color: #495057;
+  font-size: 1.45rem;
+  line-height: 1.6;
+  list-style-type: none;
+  margin-bottom: 1.5rem;
+  text-decoration: none;
+}
+
+.text li:hover,
+.text li a:hover {
+  color: #212529;
+  cursor: pointer;
+  transform: scale(105%);
+  transition: all 0.25s;
+  text-decoration: underline;
+}
+
+.logofooter {
+  height: 40px;
+  width: 123px;
+  margin-left: -10px;
+  margin-top: -7px;
+}
+
+.socialicon {
+  display: flex;
+  gap: 2rem;
+}
+
+.footer-disclaimer {
+  text-align: center;
+  font-size: 1.25rem;
+  color: #909090;
+  margin-bottom: 1rem;
+}

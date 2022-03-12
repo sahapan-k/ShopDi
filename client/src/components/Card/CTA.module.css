@@ -1,0 +1,60 @@
+.cta {
+  grid-template-columns: 2fr 1fr;
+  display: grid;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 2.4rem 4.8rem rgb(0 0 0 / 12%);
+  background-image: linear-gradient(to right bottom, #eb984e, #e67e22);
+  margin: 10rem 0;
+}
+
+.textbox {
+  padding: 4rem;
+}
+
+.header {
+  padding: 0;
+  color: #171717;
+  font-size: 3.6rem;
+  font-weight: 600;
+  margin-bottom: 4rem;
+  text-align: start;
+}
+
+.textbox p {
+  color: #232323;
+  font-size: 1.8rem;
+  margin-bottom: 4rem;
+  line-height: 1.8;
+}
+
+.textbox label {
+  display: block;
+  color: #171717;
+  font-size: 2rem;
+  font-weight: 500;
+  margin-bottom: 2rem;
+}
+
+.textbox input {
+  font-size: 1.6rem;
+  padding: 1.2rem;
+  background-color: #fdf2e9;
+  border-radius: 10px;
+  border: none;
+  width: 35rem;
+  outline: none;
+  margin-bottom: 2rem;
+  margin-right: 2rem;
+}
+
+.image {
+  background-image: linear-gradient(
+      to right bottom,
+      rgba(235, 151, 78, 0.35),
+      rgba(230, 125, 34, 0.35)
+    ),
+    url('/public/cta-image.jfif');
+  background-size: cover;
+  background-position: center;
+}

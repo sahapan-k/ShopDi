@@ -1,0 +1,115 @@
+.item-detail-mainbox {
+  display: flex;
+  gap: 10rem;
+}
+
+.item-image-box {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.item-image-frame {
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.item-image {
+  width: 50rem;
+  height: 50rem;
+  border-radius: 10px;
+  transition: all 0.3s ease;
+}
+
+.item-image:hover {
+  transform: scale(1.1);
+}
+
+.image-disclaimer {
+  text-align: center;
+  font-size: 1.6rem;
+  color: #909090;
+}
+
+.item-description-box {
+  display: flex;
+  flex-direction: column;
+  gap: 4rem;
+}
+
+.item-header {
+  font-size: 5.2rem;
+  font-weight: 700;
+}
+
+.price-rating-box {
+  display: flex;
+  gap: 2rem;
+}
+
+.price-box {
+  font-size: 5.2rem;
+  font-weight: 500;
+}
+
+.description-box {
+  font-size: 2rem;
+  color: #808080;
+  line-height: 1.6;
+}
+
+.seller-box {
+  display: flex;
+  gap: 3rem;
+}
+
+.seller-profile-image {
+  height: 5rem;
+  width: 5rem;
+  border-radius: 50%;
+}
+
+.seller-name-box {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.seller-banner {
+  font-size: 1.5rem;
+  color: #808080;
+}
+
+.seller-name {
+  font-size: 1.75rem;
+}
+
+.stock-available {
+  display: flex;
+  font-size: 1.7rem;
+  color: #4d4d4d;
+}
+
+.available-number {
+  font-size: 2rem;
+  font-weight: 600;
+  margin-right: 1rem;
+  color: #ff3333;
+}
+
+.add-to-cart-button {
+  padding: 3rem;
+  font-size: 1.6rem;
+  font-weight: 700;
+  color: #cccccc;
+  background-color: #333333;
+  border: none;
+  border-radius: 5px;
+  transition: all 0.15s ease;
+}
+
+.add-to-cart-button:hover {
+  cursor: pointer;
+  color: #ffffff;
+  background-color: #4d4d4d;
+}
