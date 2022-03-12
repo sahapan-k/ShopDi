@@ -1,0 +1,8 @@
+{
+  "root": "build/",
+  "routes": {
+    "/**": "index.html",
+    "/register": "/src/pages/Register.js",
+    "/login": "/src/pages/Login.js"
+  }
+}
