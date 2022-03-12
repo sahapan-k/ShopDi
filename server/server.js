@@ -5,12 +5,14 @@ const app = require('./app');
 
 const path = require('path');
 
-process.on('uncaughtException', (error) => {
-  console.log(error);
-  console.log(error.message);
-  console.log('UNHANDLED EXCEPTION !!');
-  process.exit(1);
-});
+if (process.env.NODE_ENV === 'production') {
+  // ... other app.use middleware
+  app.use(express.static('./client/build'));
+
+  // ...
+  // Right before your app.listen(), add this:
+  app.use('*', express.static(path.join(__dirname, 'client', 'build')));
+}
 
 dotenv.config({ path: './config.env' });
 
@@ -24,14 +26,12 @@ mongoose.connect(database).then(() => {
   console.log('Database connections successfully!');
 });
 
-if (process.env.NODE_ENV === 'production') {
-  // ... other app.use middleware
-  app.use(express.static('./client/build'));
-
-  // ...
-  // Right before your app.listen(), add this:
-  app.use('*', express.static(path.join(__dirname, 'client', 'build')));
-}
+process.on('uncaughtException', (error) => {
+  console.log(error);
+  console.log(error.message);
+  console.log('UNHANDLED EXCEPTION !!');
+  process.exit(1);
+});
 
 const port = process.env.PORT || 5000;
 
