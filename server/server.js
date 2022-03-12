@@ -14,8 +14,6 @@ process.on('uncaughtException', (error) => {
 
 dotenv.config({ path: './config.env' });
 
-const port = process.env.PORT || 3000;
-
 const database = process.env.DATABASE.replace(
   '<PASSWORD>',
   process.env.DATABASE_PASSWORD
@@ -27,11 +25,13 @@ mongoose.connect(database).then(() => {
 });
 
 // Step 1:
-app.use(express.static(path.resolve(__dirname, './client/build')));
+app.use(express.static('client/build'));
 // Step 2:
 app.get('*', function (request, response) {
   response.sendFile(path.resolve(__dirname, './client/build', 'index.html'));
 });
+
+const port = process.env.PORT || 5000;
 
 const server = app.listen(port, () => {
   // eslint-disable-next-line no-console
