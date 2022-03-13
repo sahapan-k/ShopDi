@@ -11,6 +11,9 @@ if (process.env.NODE_ENV === 'production') {
 
   // ...
   // Right before your app.listen(), add this:
+  app.get('/*', express.static(path.join(__dirname, '/client/build')));
+  app.get('*', express.static(path.join(__dirname, '/client/build')));
+  app.get('/', express.static(path.join(__dirname, '/client/build')));
   app.use('/', express.static(path.join(__dirname, '/client/build')));
 }
 
