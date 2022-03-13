@@ -7,6 +7,8 @@ const path = require('path');
 
 dotenv.config({ path: './config.env' });
 
+app.use('/', express.static(path.join(__dirname, '../server/client/build')));
+
 const database = process.env.DATABASE.replace(
   '<PASSWORD>',
   process.env.DATABASE_PASSWORD
