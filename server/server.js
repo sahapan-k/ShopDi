@@ -11,7 +11,7 @@ if (process.env.NODE_ENV === 'production') {
 
   // ...
   // Right before your app.listen(), add this:
-  app.use('*', express.static(path.join(__dirname, 'client', 'build')));
+  app.use('/', express.static(path.join(__dirname, '/client/build')));
 }
 
 dotenv.config({ path: './config.env' });
