@@ -68,10 +68,12 @@ app.use('/api/v1/items', ItemRouter);
 app.use('/api/v1/users', UserRouter);
 app.use('/api/v1/reviews', ReviewRouter);
 
-// Error handling
-// app.get('*', (request, response) => {
-//   response.sendFile(path.join(__dirname + '/../client/build/index.html'));
-// });
+if (process.env.NODE_ENV === 'production') {
+  app.use(express.static(path.join(__dirname, 'client', 'build')));
+  app.get('*', (req, res) => {
+    res.sendFile(path.join(__dirname, 'client', 'build', 'index.html'));
+  });
+}
 
 app.all('*', (request, response, next) => {
   error = new AppError(`cannot find ${request.originalUrl}`, 404);
