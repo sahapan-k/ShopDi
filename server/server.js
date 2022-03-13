@@ -5,13 +5,6 @@ const app = require('./app');
 
 const path = require('path');
 
-if (process.env.NODE_ENV === 'production') {
-  app.use(express.static(path.join(__dirname, 'client', 'build')));
-  app.get('*', (req, res) => {
-    res.sendFile(path.join(__dirname, 'client', 'build', 'index.html'));
-  });
-}
-
 dotenv.config({ path: './config.env' });
 
 const database = process.env.DATABASE.replace(
@@ -32,6 +25,13 @@ process.on('uncaughtException', (error) => {
 });
 
 const port = process.env.PORT || 5000;
+
+if (process.env.NODE_ENV === 'production') {
+  app.use(express.static(path.join(__dirname, 'client', 'build')));
+  app.get('/', (req, res) => {
+    res.sendFile(path.join(__dirname, 'client', 'build', 'index.html'));
+  });
+}
 
 const server = app.listen(port, () => {
   // eslint-disable-next-line no-console
