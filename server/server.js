@@ -6,15 +6,7 @@ const app = require('./app');
 const path = require('path');
 
 if (process.env.NODE_ENV === 'production') {
-  // ... other app.use middleware
-  app.use(express.static('./client/build'));
-
-  // ...
-  // Right before your app.listen(), add this:
-  app.get('/*', express.static(path.join(__dirname, '/client/build')));
-  app.get('*', express.static(path.join(__dirname, '/client/build')));
-  app.get('/', express.static(path.join(__dirname, '/client/build')));
-  app.use('/', express.static(path.join(__dirname, '/client/build')));
+  app.use('/', express.static(path.join(__dirname, './client/build')));
 }
 
 dotenv.config({ path: './config.env' });
