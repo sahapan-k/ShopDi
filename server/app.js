@@ -53,7 +53,7 @@ app.use(morgan('dev'));
 app.use(compression());
 
 const limiter = rateLimit({
-  max: 1000,
+  max: 100,
   windowsMs: 60 * 60 * 1000,
   message: 'Too many request, Please try again later in an hour',
 });

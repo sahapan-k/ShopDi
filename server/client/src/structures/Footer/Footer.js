@@ -22,17 +22,17 @@ const Footer = () => {
             <div className={styles.socialicon}>
               <SocialIcon
                 network="instagram"
-                url="https://www.instagram.com/paak.kanjanothai/"
+                url="https://www.instagram.com/"
                 style={{ height: 36, width: 36 }}
               />
               <SocialIcon
                 network="facebook"
-                url="https://www.facebook.com/paakkung/"
+                url="https://www.facebook.com/"
                 style={{ height: 36, width: 36 }}
               />
               <SocialIcon
                 network="twitter"
-                url="https://twitter.com/ketsuyaboy"
+                url="https://twitter.com/"
                 style={{ height: 36, width: 36 }}
               />
             </div>
@@ -43,7 +43,7 @@ const Footer = () => {
           <div className={styles.secondchild}>
             <div className={styles.header}>Contact us</div>
             <ul className={styles.text}>
-              <p>+66 88 225 1814</p>
+              <p>+66 12 345 6789</p>
               <p>Bangkok, Thailand</p>
               <li>customer-relation@shopdi.com</li>
             </ul>
