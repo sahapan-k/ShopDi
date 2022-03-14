@@ -1,5 +1,6 @@
-import React, { useRef } from 'react';
+import React, { useRef, useState } from 'react';
 import styles from './Checkout.module.css';
+import Swal from 'sweetalert2';
 
 import CheckoutItem from '../../components/Cart/CheckoutItem';
 
@@ -7,7 +8,17 @@ import { useSelector } from 'react-redux';
 
 const Checkout = () => {
   const cartItems = useSelector((state) => state.auth.items);
+  const [customAddressIsSelect, setCustomIsSelect] = useState(false);
+  const [userAddressIsSelect, setUserIsSelect] = useState();
   const customAddressInputRef = useRef();
+  const onUserValueChangeHandler = (event) => {
+    setCustomIsSelect(false);
+    setUserIsSelect(true);
+  };
+  const onCustomValueChangeHandler = (event) => {
+    setUserIsSelect(false);
+    setCustomIsSelect(true);
+  };
   const cartTotalPrice = cartItems.reduce(
     (total, items) => items.totalPrice + total,
     0
@@ -18,7 +29,11 @@ const Checkout = () => {
   );
 
   const checkoutSubmitHandler = () => {
-    const enteredCustomAddress = customAddressInputRef.current.value;
+    Swal.fire({
+      icon: 'error',
+      title: 'Not Implemented',
+      text: 'The Payment System is not yet implemented!',
+    });
   };
 
   return (
@@ -32,9 +47,10 @@ const Checkout = () => {
             <div className={styles['input-field']}>
               <input
                 type="radio"
-                id="address"
+                id="user-address"
                 name="address"
                 className={styles['radio-button']}
+                onChange={onUserValueChangeHandler}
               />
               <label htmlFor="user-address" className={styles['radio-label']}>
                 Use your account address
@@ -42,8 +58,9 @@ const Checkout = () => {
             </div>
             <div className={styles['input-field']}>
               <input
+                onChange={onCustomValueChangeHandler}
                 type="radio"
-                id="address"
+                id="custom-address"
                 name="address"
                 className={styles['radio-button']}
               />
@@ -51,10 +68,12 @@ const Checkout = () => {
                 Use new address
               </label>
             </div>
-            <textarea
-              className={styles['custom-address-textarea']}
-              ref={customAddressInputRef}
-            />
+            {customAddressIsSelect && (
+              <textarea
+                className={styles['custom-address-textarea']}
+                ref={customAddressInputRef}
+              />
+            )}
           </div>
         </div>
       )}
