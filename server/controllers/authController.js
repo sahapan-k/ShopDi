@@ -4,6 +4,7 @@ const AppError = require('../utility/appError');
 const catchAsync = require('../utility/catchAsync');
 const { promisify } = require('util');
 const sendEmail = require('../utility/email');
+const { response } = require('express');
 
 const signToken = (id) =>
   jwt.sign({ id }, process.env.JWT_SECRET, {
@@ -41,7 +42,7 @@ exports.signup = catchAsync(async (request, response, next) => {
     password: request.body.password,
     confirmPassword: request.body.confirmPassword,
   });
-  createSendToken(newUser, 201, response, request);
+  createSendToken(newUser, 201, request, response);
 });
 
 exports.login = catchAsync(async (request, response, next) => {
