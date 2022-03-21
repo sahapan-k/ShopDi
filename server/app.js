@@ -41,7 +41,15 @@ app.use(cors(corsOptions));
 app.enable('trust proxy', 1);
 app.use(express.json());
 app.use(express.static('public'));
-app.use(helmet());
+// app.use(helmet());
+app.use(
+  helmet.contentSecurityPolicy({
+    useDefaults: true,
+    directives: {
+      'img-src': ["'self'", 'https: data:'],
+    },
+  })
+);
 app.use(mongoSanitize());
 app.use(xss());
 app.use(
